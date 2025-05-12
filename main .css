@@ -1,0 +1,65 @@
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Table styling */
+table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Header styling */
+thead {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Alternate row colors */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Status color styling */
+td:nth-child(3) {
+    font-weight: bold;
+}
+
+/* Custom colors for status */
+td:nth-child(3):contains("Required") {
+    color: #FF5733;
+}
+
+td:nth-child(3):contains("Preferred") {
+    color: #FFC300;
+}
+
+td:nth-child(3):contains("Optional") {
+    color: #4CAF50;
+}
